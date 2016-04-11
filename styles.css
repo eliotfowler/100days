@@ -1,0 +1,136 @@
+body {
+  background-color: #eaeaea;
+  font-family: "Helvetica";
+}
+
+@font-face {
+  font-family: 'GothamHTF-Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('GothamHTF-Book'), url('GothamHTF-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GothamHTF-Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('GothamHTF-Black'), url('GothamHTF-Black.woff') format('woff');
+}
+
+.header-container {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+}
+
+.subtitle {
+  display: inline-block;
+}
+
+.days-container {
+  width: 960px;
+  margin: 20px auto;
+  font-family:'GothamHTF-Book';
+}
+
+.day {
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  padding: 35px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.day-label {
+  position: absolute;
+  display: inline-block;
+  font-family:'GothamHTF-Black';
+}
+
+.date-container {
+  text-align: center;
+}
+
+.date-label {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.puzzle-wrapper {
+  float: left;
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+div {
+  contentEditable: true;
+}
+
+.filled {
+  width: 58px;
+  height: 58px;
+  background: black;
+  border: 1px solid black;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+.empty {
+  width: 58px;
+  height: 58px;
+  border: 1px solid black;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+.numbered {
+  counter-increment: value;
+}
+
+.numbered:nth-of-type(n)::before {
+  content: counter(value);
+  font-size: 15px;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.clues-container {
+  float: right;
+  width: 180px;
+  margin-right: 30px;
+}
+
+.across.clues-container {
+  margin-top: 100px;
+}
+
+.down.clues-container {
+  margin-top: 30px;
+}
+
+.direction-label {
+  font-weight: bold;
+}
+
+.clue {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.clue .clue-number {
+  font-weight: bold;
+}
+
+.clue .clue-name {
+
+}
