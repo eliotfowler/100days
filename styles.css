@@ -37,6 +37,7 @@ body {
 }
 
 .day {
+  position: relative;
   width: 600px;
   height: 600px;
   background-color: white;
@@ -133,4 +134,12 @@ div {
 
 .clue .clue-name {
 
+}
+
+a.footer-link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  color: #004D7D;
 }
