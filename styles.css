@@ -42,8 +42,6 @@ body {
   margin-top: 30px;
 }
 
-
-
 .day {
   position: relative;
   width: 600px;
@@ -146,8 +144,8 @@ div {
 
 a.footer-link {
   position: absolute;
-  bottom: 20px;
+  top: 35px;
   right: 20px;
   text-decoration: none;
-  color: #004D7D;
+  color: #0015FF;
 }
